@@ -1,3 +1,18 @@
+/*VARIABLES*/
+/*MIXINS*/
+/*EXTEND PLACEHOLDER*/
+.same-css, .success, .error, .warning {
+  font: 100% "Space Mono", monospace;
+  color: #2748b3;
+  margin: 0px;
+  padding: 16px;
+  background-color: #000;
+  background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-attachment: fixed;
+}
+
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
@@ -17,6 +32,7 @@ article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 16px;
+  /*nest de rest v pagina hieronder*/
 }
 
 article section {
@@ -34,6 +50,7 @@ article section {
   overflow: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /*hier is mixin box shadow*/
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
@@ -98,26 +115,5 @@ h6 {
   margin: 16px;
   color: #2748b3;
   background-color: #000;
-}
-
-
-.success {
-  background-color: green;
-  background-color: #333;
-  padding: 16px;
-}
-
-
-.error {
-  background-color: red;
-  background-color: #333;
-  padding: 16px;
-}
-
-
-.warning {
-  background-color: orange;
-  background-color: #333;
-  padding: 16px;
 }
 /*# sourceMappingURL=style.css.map */
