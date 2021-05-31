@@ -5,6 +5,7 @@ $my-padding: 16px;
 $mybackground: #333;
 $blue: blue;
 $red: red;
+$background: rgba(218, 94, 207, 0.74);
 
 /*MIXINS*/
 
@@ -21,7 +22,7 @@ $red: red;
   color: #2748b3;
   margin: 0px;
   padding: $my-padding;
-  background-color: #000;
+  background-color: $background;
   background-image: radial-gradient(
                   #fff,
                   rgba(255, 255, 255, 0.2) 2px,
@@ -45,7 +46,7 @@ body {
   color: #2748b3;
   margin: 0px;
   padding: $my-padding;
-  background-color: #000;
+  background-color: $background;
   background-image: radial-gradient(
                   #fff,
                   rgba(255, 255, 255, 0.2) 2px,
@@ -142,15 +143,18 @@ h6 {
   padding: $my-padding;
   margin: 16px;
   color: #2748b3;
-  background-color: #000;
+  background-color: $background;
 }
     
 .success {
     @extend .same-css;
+    background-color: orange;
 }
 .error {
     @extend .same-css;
+    background-color: red;
 }
 .warning {
     @extend .same-css;
+    background-color: green;
 }
